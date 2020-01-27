@@ -11,6 +11,7 @@ class Visualizer:
         self.dataFrame = dataFrame
         
     def plotClassOrder(self):
+         alt.data_transformers.disable_max_rows()
          chart2 = alt.Chart(self.dataFrame).mark_bar().encode(
          x=alt.X('sum(number)',type='quantitative',title='Total Number'),
          y=alt.Y('clasS', type='nominal',title='Class',sort = alt.SortField('number', order='descending')),
