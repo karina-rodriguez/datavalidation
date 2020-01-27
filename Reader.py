@@ -128,9 +128,9 @@ if __name__=='__main__':
     reader = Reader('./data/db.csv')
     dataset = reader.readData()
     #validate the dataset
-    validator = Validator(dataset)
-    datasetValidated = validator.validateData()
+#    validator = Validator(dataset)
+#    datasetValidated = validator.validateData()
     #create some visualisations
-#    visualizer = Visualizer(datasetValidated)
-#    visualizer.plotClassOrder()
-#    visualizer.plotClassOrder()
+    visualizer = Visualizer(dataset)
+    visualizer.plotClassOrder()
+    visualizer.plotClassOrder()
