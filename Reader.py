@@ -131,6 +131,6 @@ if __name__=='__main__':
     validator = Validator(dataset)
     datasetValidated = validator.validateData()
     #create some visualisations
-    visualizer = Visualizer(datasetValidated)
-    visualizer.plotClassOrder()
-    visualizer.plotClassOrder()
+#    visualizer = Visualizer(datasetValidated)
+#    visualizer.plotClassOrder()
+#    visualizer.plotClassOrder()
